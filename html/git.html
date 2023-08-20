@@ -6,21 +6,37 @@
     <link rel="stylesheet" href="git.css">
 </head>
 <body>
+    <h2>
+        <a href="index.html">Главная</a>
+        </h2>
+    <style>
+        code {
+            color:#941212;
+            font-size: 20px;
+        }
+        b {
+            color:#047517;
+            font-size: 25px;
+        }
+        p {
+            font-size: 20px;
+        }
+        </style>
 <article id="news-body" itemprop="articleBody">
 
-    <p class="blue" style="color:blue">
+    <h2 class="blue" style="color:blue">
         Перед вами небольшая статья-шпаргалка,&nbsp; которая включает в себя удобные, но не всем знакомые
         команды Git, которые могут стать вашими постоянными спутниками в разработке.
-    </p>
+    </h2>
     <p>
-        1. <b class="red" style="color:red">git init</b>
+        1. <b>git init</b>
     </p>
     <p>
         Эта команда используется для инициализации проекта как репозитория git
     </p>
     <br>
     <p>
-        2. <b class="red" style="color:red">git clone
+        2. <b>git clone
     </b>
     </p>
     <p>
@@ -52,7 +68,7 @@
     </p>
     <br>
     <p>
-        3. <b class="red" style="color:red">git remote add
+        3. <b>git remote add
     </b>
     </p>
     <p>
@@ -64,14 +80,14 @@
     </p>
     <br>
     <p>
-        4. <b class="red" style="color:red">git remote -v</b>
+        4. <b>git remote -v</b>
     </p>
     <p>
         Эта команда используется для просмотра подключенных удаленных репозиториев.
     </p>
     <br>
     <p>
-        5. <b class="red" style="color:red">git status</b>
+        5. <b>git status</b>
     </p>
     <p>
         Эта команда используется для просмотра статуса файлов в вашем локальном репозитории. Отслеживаются ли файлы? Не
@@ -79,7 +95,7 @@
     </p>
     <br>
     <p>
-        6. <b class="red" style="color:red">git add </b>
+        6. <b>git add </b>
     </p>
     <p>
         Пример:<code> git add index.html</code>
@@ -105,7 +121,7 @@
     </p>
     <br>
     <p>
-        7.<b class="red" style="color:red"> git reset</b>
+        7.<b> git reset</b>
     </p>
     <p>
         Эта команда используется для мягкой или жёсткой отмены изменений, позволяет сбросить состояние проекта до
@@ -128,7 +144,7 @@
         <br>
     </p>
     <p>
-        8. <b class="red" style="color:red">git commit</b>
+        8. <b>git commit</b>
     </p>
     <p>
         Эта команда совершает коммит  — «закрепляет» промежуточные результаты.
@@ -151,7 +167,7 @@
     </p>
     <br>
     <p>
-        9. <b class="red" style="color:red">git push -u origin</b>
+        9. <b>git push -u origin</b>
     </p>
     <p>
         Ключ <code>-u</code> (полный вариант <code>--set-upstream</code>) создаёт в удалённом репозитории ветку,
@@ -171,7 +187,7 @@
     </p>
     <br>
     <p>
-        10. <b class="red" style="color:red">git fetch
+        10. <b>git fetch
     </b>
     </p>
     <p>
@@ -180,7 +196,7 @@
     </p>
     <br>
     <p>
-        11. <b class="red" style="color:red">git pull</b>
+        11. <b>git pull</b>
     </p>
     <p>
         Эта команда используется для извлечения только что полученной информации и ее загрузки в локальный репозиторий.
@@ -188,7 +204,7 @@
     </p>
     <br>
     <p>
-        12. <b class="red" style="color:red">git branch</b>
+        12. <b>git branch</b>
          Эта команда используется для создания, просмотра переименования и удаления ветки, на которой вы
         сейчас находитесь.
     </p>
@@ -206,7 +222,7 @@
     </p>
     <br>
     <p>
-        13. <b class="red" style="color:red">git checkout</b>
+        13. <b>git checkout</b>
     </p>
     <p>
         Пример: <code>git checkout master</code> или <code>git checkout develop</code>
@@ -220,7 +236,7 @@
     </p>
     <br>
     <p>
-        14. <b class="red" style="color:red">git merge</b>
+        14. <b>git merge</b>
     </p>
     <p>
         Эта команда используется для объединения двух веток. Для этого укажите ветку, которую вы хотите унаследовать
@@ -235,7 +251,7 @@
     </p>
     <br>
     <p>
-        15. <b class="red" style="color:red">git merge — abort</b>
+        15. <b>git merge — abort</b>
     </p>
     <p>
         Эта команда используется для отмены слияния.
@@ -265,7 +281,7 @@
     </p>
     <br>
     <p>
-        16. <b class="red" style="color:red">git reset — hard HEAD</b>
+        16. <b>git reset — hard HEAD</b>
     </p>
     <p>
         Эта команда удалит все изменения, внесенные вами в ваш локальный репозиторий, и обновит его до последней версии,
@@ -273,14 +289,14 @@
     </p>
     <br>
     <p>
-        17. <b class="red" style="color:red">git reset HEAD^</b>
+        17. <b>git reset HEAD^</b>
     </p>
     <p>
         Эта команда перемещает текущую ветку назад на два коммита, эффективно удаляя два снапшота, которые мы только что создали, из истории проекта. Он отменяет случайное закоммичивание и сохраняет изменения.
     </p>
     <br>
     <p>
-        18. <b class="red" style="color:red">git clean -f</b>
+        18. <b>git clean -f</b>
         <p>
         Эта команда используется для удаления неотслеживаемых файлов из  вашего локального репозитория.
         </p>
@@ -292,7 +308,7 @@
     </p>
     <br>
     <p>
-        19. <b class="red" style="color:red">git rm -r — cached</b>
+        19. <b>git rm -r — cached</b>
     <p>
         Пример: <code>git rm -r --cached config.js</code>
     </p>
@@ -301,13 +317,13 @@
     </p>
     <br>
     <p>
-         20. <b class="red" style="color:red">git bisect</b>
+         20. <b>git bisect</b>
     <p>
          Эта команда используется для обнаружения коммита, вызвавшего ошибку в коде. Так проще отследить коммит, где код работает и выявить проблемный коммит.
     </p>
     <br>
     <p>
-        21. <b class="red" style="color:red">git diff</b>
+        21. <b>git diff</b>
     </p>
           Эта команда перемещает текущую ветку назад на два коммита, эффективно удаляя два снапшота, которые мы только что
         создали, из истории проекта. Он отменяет случайное закоммичивание и сохраняет изменения.
@@ -322,7 +338,7 @@
         <br>
     </p>
     <p>
-        22. <b class="red" style="color:red">git rebase</b>
+        22. <b>git rebase</b>
     </p>
     <p>
         Полезно, если вы работали с веткой, но затем вам нужно объединить изменения, сделанные в этой ветке, с другой.
@@ -339,7 +355,7 @@
     </p>
     <br>
     <p>
-        23. <b class="red" style="color:red">git stash</b>
+        23. <b>git stash</b>
     </p>
     <p>
         Эта команда используется для сохранения неподтверждённых изменений в отдельном хранилище, чтобы можно было
