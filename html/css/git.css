@@ -2,35 +2,35 @@ body {
     font-size: 24px;
 }
 .green {
-    color: blue;
+    color: #008000;
 }
 .red {
-    color: green;
+    color: #ff0000;
 }
 .blue {
-    color: red;
+    color: #0000ff;
 }
 li.green {
-    color: red;
+    color: #008000;
 }
 li.red {
-    color: blue;
+    color: #ff0000;
 }
 li.blue {
-    color: green;
+    color: #0000ff;
 }
 ul ol li.red {
-    color: cyan;
+    color: #ff0000;
 }
 ul ol li.green {
-    color: orange;
+    color: #008000;
 }
 ul ol li.blue {
-    color: magenta;
+    color: #0000ff;
 }
 p.italic {
-    font-weight: italic;
+    font-style: italic;
 }
 p.bold {
-    font-style: bold;
+    font-weight: bold;
 }
